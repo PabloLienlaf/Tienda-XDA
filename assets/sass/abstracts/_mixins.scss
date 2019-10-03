@@ -1,0 +1,27 @@
+// Mixins
+
+// Transforma px en rem
+@mixin relative-converter($property, $unit, $target, $context) {
+  $result: ($target / $context);
+  #{$property}: #{$result + $unit};
+}
+
+
+// Views
+@mixin tablet-view {
+  @media (min-width: #{$min-tablet}) {
+    @content;
+  }
+}
+
+@mixin laptop-view {
+  @media (min-width: #{$min-laptop}) {
+    @content;
+  }
+}
+
+@mixin device-large-view {
+  @media (min-width: #{$min-large}) {
+    @content;
+  }
+}

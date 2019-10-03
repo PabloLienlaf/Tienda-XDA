@@ -1,0 +1,16 @@
+.button {
+  margin: 2rem 0;
+  padding: 0.5rem 1rem;
+  background-color: $white;
+  border: 1px solid $smoky-black;
+  font-family: $raleway;
+  font-size: $medium;
+  font-weight: $bold;
+  &:hover{
+    border: 1px solid $quick-silver;
+  }
+  &:focus{
+    border: 1px solid $quick-silver;
+    color: $quick-silver;
+  }
+}

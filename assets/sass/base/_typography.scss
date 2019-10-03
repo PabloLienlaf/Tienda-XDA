@@ -1,0 +1,30 @@
+h1 {
+  font-size: $xxx-large;
+  font-weight: $bold;
+  font-family: $old-standard;
+}
+
+p {
+  font-family: $raleway;
+  font-weight: $regular;
+  color: $granite-gray;
+}
+
+a {
+  font-family: $raleway;
+  font-weight: $bold;
+  text-decoration: none;
+  color: $smoky-black;
+  &:hover{
+    color: $quick-silver;
+  }
+}
+
+h3 {
+  font-size: $xx-large;
+  font-weight: $bold;
+  font-family: $old-standard;
+}
+h4 {
+  font-size: $x-large;
+}

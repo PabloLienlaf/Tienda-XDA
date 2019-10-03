@@ -1,0 +1,12 @@
+.newsletter__input {
+  color: $smoky-black;
+  padding: .3em;
+  border: 1px solid $smoky-black;
+  width: 70%;
+}
+
+@media only screen and (max-width:1200px){
+  .newsletter__input {
+    width: 100%;
+  }
+}

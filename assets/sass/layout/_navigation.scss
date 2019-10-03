@@ -1,0 +1,95 @@
+.navigation {
+  position: relative;
+  height: 84px;
+  background-color: $white;
+
+  &__logo img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 84px;
+  width: 84px;
+  }
+
+  &__list {
+    list-style-type: none;
+    background-color: $white;
+  }
+
+  &__item {
+    a {
+      display: block;
+      text-align: left;
+      padding: 0.5em 2em;
+      text-decoration: none;
+      text-align: right;
+    }
+  }
+}
+
+.collapsible{
+  text-align: right;
+  label{
+    display: block;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 1.5em;
+    font-size: 1.8rem;
+    i {
+      cursor: pointer;
+    }
+  }
+}
+
+//Aquí empiza configuración hamburguesa
+#menu {
+  display: block;
+}
+
+.navinput {
+  visibility: hidden;
+}
+
+.navigation__container {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+input:checked ~ .navigation__container{
+  max-height: 100%;
+  display: block;
+  max-height: auto;
+}
+
+//Media querie
+@media only screen and (min-width: 992px) {
+  .navigation__list {
+      display: block;
+    }
+
+  .collapsible {
+     label {
+      display: none;
+     }
+    }
+  .navigation__container {
+    max-height: 100%;
+    padding: .5em 3em .5em 0;
+    overflow: visible;
+    }
+
+  .navigation__list {
+    display: flex;
+    justify-content: flex-end;
+    margin: inherit;
+    padding: inherit;
+    }
+
+  .navigation__item {
+      a {
+      padding: .5em 1em;
+      font-size: 1rem;
+      }
+    }
+  }

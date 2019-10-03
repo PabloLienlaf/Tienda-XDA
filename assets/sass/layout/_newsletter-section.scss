@@ -1,0 +1,26 @@
+.newsletter {
+  &__form {
+    box-sizing: border-box;
+    background-color: $smoky-black;
+    color: $white;
+    padding: 3.5rem 4rem;
+    h5 {
+      font-size: $small;
+      padding: .3rem 0;
+    }
+  }
+  &__subscribe {
+    box-sizing: border-box;
+    background-color: $white;
+    color: $smoky-black;
+    height: 100%;
+  }
+  &__text {
+    transform: rotate(90deg);
+    font-family: $old-standard;
+    font-weight: $bold;
+    position: relative;
+    top: 40%;
+    font-size: $small;
+  }
+}
